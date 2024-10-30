@@ -65,14 +65,8 @@
     linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
-/* Responsive Images */
 img {
   width: 100%;
-  height: auto;
-  max-width: 100%; /* Ensures the image doesn’t exceed the container width */
-  display: block; /* Removes unwanted inline spacing */
+  height: auto; 
+  display: block; 
 }
-
-/* .splide__pagination {
-  visibility: hidden;
-} */
