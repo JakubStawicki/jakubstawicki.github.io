@@ -83,6 +83,63 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
   Mountain biking has taken me from local trails near London to rugged terrain in Wales, a journey that’s made long train rides worthwhile for the reward of challenging and scenic trails. 
   This experience has sharpened my handling skills and control, especially on technical terrain.  
 </p>
+<h2 class="text-3xl font-bold mt-8">Fishing and kayaking</h2>
+<br>
+<!-- PHOTO SLIDE -->
+<section class="border-b border-white/20 bg-accent-500">
+<div class="mx-auto max-w-7xl border-white/20 border-x"
+x-data="{ init() {
+  new Splide(this.$refs.splide, {
+      perPage: 1, 
+      gap: '1rem', 
+      arrows: true, 
+      breakpoints: {
+          640: { perPage: 1 },
+      },
+  }).mount()
+} }">
+<section class="splide" x-ref="splide" id="splide01" aria-roledescription="carousel">
+<div class="splide__arrows splide__arrows--ltr items-center">
+  <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
+    aria-controls="splide01-track">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+      <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+    </svg>
+  </button>
+  <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+    aria-controls="splide01-track">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+      <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+    </svg>
+  </button>
+</div>
+
+<div class="splide__track" id="splide01-track" style="padding-left: 0px; padding-right: 0px;">
+  <ul class="splide__list" id="splide01-list" role="presentation">
+    <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+      aria-roledescription="slide" aria-label="2 of 10">
+      <Image src={fish1} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
+    </li>
+
+    <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+      aria-roledescription="slide" aria-label="2 of 10">
+      <Image src={fish2} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
+    </li>
+    
+    <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+      aria-roledescription="slide" aria-label="2 of 10">
+      <Image src={kayak} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
+    </li>
+  </ul>
+</div>
+</section>
+</div>
+</section>
+<br>
+<!-- PHOTO SLIDE -->
+<p>
+  Kayaking is a calm, enjoyable escape I take up occasionally, while fishing has taught me patience and determination. There's nothing quite as rewarding as finally landing a catch.
+</p>
 <h2 class="text-3xl font-bold mt-8">Skiing</h2>
 <br>
 <!-- PHOTO SLIDE -->
@@ -139,62 +196,6 @@ x-data="{ init() {
 <!-- PHOTO SLIDE -->
 <p>
   Snowsports, like skiing, is a more recent adventure for me, but I’ve enjoyed the new challenges it brings, helping me build balance and adaptability.
-</p>
-<h2 class="text-3xl font-bold mt-8">Fishing and kayaking</h2>
-<br>
-<!-- PHOTO SLIDE -->
-<section class="border-b border-white/20 bg-accent-500">
-<div class="mx-auto max-w-7xl border-white/20 border-x"
-x-data="{ init() {
-  new Splide(this.$refs.splide, {
-      perPage: 1, 
-      gap: '1rem', 
-      arrows: true, 
-      breakpoints: {
-          640: { perPage: 1 },
-      },
-  }).mount()
-} }">
-<section class="splide" x-ref="splide" id="splide01" aria-roledescription="carousel">
-<div class="splide__arrows splide__arrows--ltr items-center">
-  <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
-    aria-controls="splide01-track">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
-      <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
-    </svg>
-  </button>
-  <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
-    aria-controls="splide01-track">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
-      <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
-    </svg>
-  </button>
-</div>
-
-<div class="splide__track" id="splide01-track" style="padding-left: 0px; padding-right: 0px;">
-  <ul class="splide__list" id="splide01-list" role="presentation">
-    <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
-      aria-roledescription="slide" aria-label="2 of 10">
-      <Image src={fish1} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
-    </li>
-
-    <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
-      aria-roledescription="slide" aria-label="2 of 10">
-      <Image src={fish2} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
-    </li>
-    <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
-      aria-roledescription="slide" aria-label="2 of 10">
-      <Image src={kayak} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
-    </li>
-  </ul>
-</div>
-</section>
-</div>
-</section>
-<br>
-<!-- PHOTO SLIDE -->
-<p>
-  Kayaking is a calm, enjoyable escape I take up occasionally, while fishing has taught me patience and determination. There's nothing quite as rewarding as finally landing a catch.
 </p>
     </div>
   </section>
