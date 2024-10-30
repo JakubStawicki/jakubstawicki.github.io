@@ -26,13 +26,17 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         I iteratively refined the simulation by focusing on stress distribution under tire paths and integrating subgrade layers for realism. 
         By referencing asphalt’s S-N curve and applying Miner’s Rule for cumulative fatigue, 
         I estimated a realistic road lifespan of about 9-10 years under typical traffic and environmental conditions. 
-        This research highlights the value of FEA in predicting road durability and planning effective maintenance strategies. <br>
-        <br>
+        This research highlights the value of FEA in predicting road durability and planning effective maintenance strategies.
+      </p>
+      
+      <!-- Responsive, optimized image -->
+      <Image src={fea} alt="work" width={1200} height={700} class="w-full object-cover object-center bg-white border-t border-black lg:border-r" />
 
-        <Image src={fea} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
-        <p>Read the full documentation <a href={feapdf} target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">here</a>.</p>
+      <!-- Link to PDF documentation -->
+      <p class="mt-4">
+        Read the full documentation 
+        <a href={feapdf} target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">here</a>.
       </p>
     </div>
   </section>
 </BaseLayout>
-
