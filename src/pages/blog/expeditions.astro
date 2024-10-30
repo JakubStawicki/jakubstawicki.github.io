@@ -1,0 +1,130 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <section class="border-b border-white/20 bg-accent-500 py-12">
+    <div class="mx-auto max-w-7xl border-x border-white/20 px-8 py-12 gradient-grid">
+      <div class="mx-auto text-white text-center">
+        <h1 class="text-4xl font-display uppercase">Expedition</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-black text-white py-12">
+    <div class="mx-auto max-w-7xl px-8">
+      <a href="/" class="bg-orange text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-black transition-colors duration-300">
+        Return to Main Page
+      </a>
+
+      <h2 class="text-3xl font-bold mt-8">Overnight in New Forest</h2>
+<br>
+      <p>
+        In the spring of 2024, my friends and I embarked on a memorable expedition from London to New Forest near Southampton. 
+        Our journey began before dawn as we boarded a coach from London to Southampton at 5 am. 
+        The early start was't new, but with all our gear on our backs, I knew the journey will be a challenge.
+      </p>
+<br>
+ <!-- PHOTO SLIDE -->
+      <section class="border-b border-white/20 bg-accent-500">
+        <div class="mx-auto max-w-7xl border-white/20 border-x"
+          x-data="{ init() {
+              new Splide(this.$refs.splide, {
+                  perPage: 1, 
+                  gap: '1rem', 
+                  arrows: true, 
+                  breakpoints: {
+                      640: { perPage: 1 },
+                  },
+              }).mount()
+          } }">
+          <section class="splide" x-ref="splide" id="splide01" aria-roledescription="carousel">
+            <div class="splide__arrows splide__arrows--ltr items-center">
+              <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
+                aria-controls="splide01-track">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+                  <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+                </svg>
+              </button>
+              <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+                aria-controls="splide01-track">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+                  <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+                </svg>
+              </button>
+            </div>
+      
+            <div class="splide__track" id="splide01-track" style="padding-left: 0px; padding-right: 0px;">
+              <ul class="splide__list" id="splide01-list" role="presentation">
+                <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+                  aria-roledescription="slide" aria-label="2 of 10">
+                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+                    style="height: 700px;" src="/src/images/mission 1.jpg" />
+                </li>
+      
+                <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+                  aria-roledescription="slide" aria-label="2 of 10">
+                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+                    style="height: 700px;" src="/src/images/mission 2.jpg" />
+                </li>
+      
+                <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+                  aria-roledescription="slide" aria-label="2 of 10">
+                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+                    style="height: 700px;" src="/src/images/mission 3.jpg" />
+                </li>
+
+                <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+                  aria-roledescription="slide" aria-label="2 of 10">
+                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+                    style="height: 700px;" src="/src/images/mission 4.jpg" />
+                </li>
+
+                <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+                  aria-roledescription="slide" aria-label="2 of 10">
+                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+                    style="height: 700px;" src="/src/images/mission 5.jpg" />
+                </li>
+
+                <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+                  aria-roledescription="slide" aria-label="2 of 10">
+                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+                    style="height: 700px;" src="/src/images/mission 6.jpg" />
+                </li>
+                <!-- Add more slides similarly -->
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+      <br>
+      <!-- PHOTO SLIDE -->
+       <p> 
+        With printed maps sealed in plastic wallets and handheld compasses, we set off on foot from Southampton toward the coast in Lepe.
+        Relying solely on these traditional navigation tools, I took on the role of the main navigator. 
+        Leaving the roads behind, we ventured onto winding paths that led us through beautiful, vast fields. 
+        The scenery was refreshing, but the journey was not without its obstacles—we trudged through ridiculous volumes of mud that tested our endurance and sense of humour.
+        <br>
+        <br>
+        As we walked down the coastline, the sea breeze provided a refreshing contrast to the muddy trails. 
+        However, the terrible weather threatened to dampen our spirits. Rain and wind persisted, but so did we, determined to reach our camping area for the night. 
+        Darkness had fallen by the time we arrived at the campsite, forcing us to set up our bashas in the dark. Despite the fatigue, we managed to settle in for the night. 
+        <br>
+        <br>
+        The night was colder than expected, and even with a good sleeping bag, I couldn't shake off the chill. 
+        The constant noise from the wind kept me alert, making it difficult to sleep well. 
+        Morning arrived and after cooking breakfast, we knew we had to head out early to catch our bus back to London.
+        <br>
+        <br>
+        We set off with damp feet, taking regular breaks to rest and appreciate the serene surroundings. 
+        The journey back to Southampton was lengthy, but the camaraderie and shared sense of achievement kept us motivated. 
+        Boarding the coach felt like a well-deserved reward. As soon as I settled into my seat, exhaustion washed over me, and I fell asleep instantly.
+        <br>
+        <br>
+        Reflecting on the expedition, I realised how much I enjoyed the challenge. 
+        Serving as the main navigator was rewarding, and navigating using only a printed map and compass added a sense of adventure. 
+        Although at times the expedition was devastating, the experience built on my rational thinking during critical moments. I cannot wait to go again.
+       </p>
+    </div>
+  </section>
+</BaseLayout>

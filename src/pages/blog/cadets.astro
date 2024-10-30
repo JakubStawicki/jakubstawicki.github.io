@@ -1,0 +1,116 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <section class="border-b border-white/20 bg-accent-500 py-12">
+    <div class="mx-auto max-w-7xl border-x border-white/20 px-8 py-12 gradient-grid">
+      <div class="mx-auto text-white text-center">
+        <h1 class="text-4xl font-display uppercase">Army cadets</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-black text-white py-12">
+    <div class="mx-auto max-w-7xl px-8">
+      <a href="/" class="bg-orange text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-black transition-colors duration-300">
+        Return to Main Page
+      </a>
+
+      <h2 class="text-3xl font-bold mt-8">Army Cadets</h2>
+      <p>
+        <br>
+        Joining the Army Cadet Force was a transformative experience that enriched my life in several ways. 
+        Cadets provided me with opportunities that extended far beyond conventional learning, allowing me to develop skills and create memories that will last a lifetime.
+        <br>
+        <br>
+        Throughout my time at cadets, I had the privilege of participating in a variety of activities that identified my abilities and broadened my horizons. 
+        Attending several week-long summer camps and weekend excursions, I engaged in adventure training that pushed me beyond my comfort zone. 
+        Rough camping in all weather conditions taught me resilience, while working with the L98A2 rifle was both educational and a new responsibility that I was entrusted with. 
+        Not only did I fire the rifle live on shooting ranges, but I also learned how to disassemble, clean, and maintain it. 
+        This experience deepened my understanding of the importance of upkeep and safety, instilling in me a strong sense of responsibility to maintain equipment properly.
+        <br>
+        <br>
+ <!-- PHOTO SLIDE -->
+ <section class="border-b border-white/20 bg-accent-500">
+  <div class="mx-auto max-w-7xl border-white/20 border-x"
+    x-data="{ init() {
+        new Splide(this.$refs.splide, {
+            perPage: 1, 
+            gap: '1rem', 
+            arrows: true, 
+            breakpoints: {
+                640: { perPage: 1 },
+            },
+        }).mount()
+    } }">
+    <section class="splide" x-ref="splide" id="splide01" aria-roledescription="carousel">
+      <div class="splide__arrows splide__arrows--ltr items-center">
+        <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
+          aria-controls="splide01-track">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+            <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+          </svg>
+        </button>
+        <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+          aria-controls="splide01-track">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+            <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="splide__track" id="splide01-track" style="padding-left: 0px; padding-right: 0px;">
+        <ul class="splide__list" id="splide01-list" role="presentation">
+          <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+            aria-roledescription="slide" aria-label="2 of 10">
+            <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              style="height: 700px;" src="/src/images/Cadets 1.jpg" />
+          </li>
+
+          <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+            aria-roledescription="slide" aria-label="2 of 10">
+            <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              style="height: 700px;" src="/src/images/Cadets 2.jpg" />
+          </li>
+
+          <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+            aria-roledescription="slide" aria-label="2 of 10">
+            <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              style="height: 700px;" src="/src/images/Cadets 3.jpg" />
+          </li>
+
+          <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
+            aria-roledescription="slide" aria-label="2 of 10">
+            <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              style="height: 700px;" src="/src/images/Cadets 4.jpg" />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</section>
+<br>
+<!-- PHOTO SLIDE -->
+        I frequently led sections, serving as both first and second in command on multiple occasions. 
+        This responsibility built a strong sense of accountability and equipped me with resilience and determination. 
+        Delivering lessons on drill and navigation to new recruits allowed me to step into the role of a teacher and mentor, enhancing my communication skills and confidence. 
+        <br>
+        <br>
+        The core values of the Army Cadet Force became more than just words; they shaped my character and approach to challenges. 
+        Operating under pressure in harsh environments, especially during night patrols and ambushes, required quick thinking and strategic decision-making. 
+        These situations heightened my problem-solving skills and taught me how to maintain composure in dynamic environments. 
+        Collaborating with individuals I’ve never met before, enriched my understanding of teamwork and the necessity of clear communication to achieve common goals.
+        <br>
+        <br>
+        The discipline ingrained in me ensured that I adhered to high standards, whether it was through meticulous uniform maintenance or upholding the strict moral code. 
+        These experiences emphasized the importance of doing everything to a high standard to prevent mistakes.
+        <br>
+        <br>
+        In reflection, my journey with the Army Cadet Force prepared me well for future challenges. 
+        The skills I developed, the responsibilities I shouldered, and the relationships I built have left an incredible mark on me. 
+        I emerged sharper, more confident, and ready to face whatever lies ahead.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

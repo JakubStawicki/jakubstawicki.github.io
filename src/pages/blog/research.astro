@@ -1,0 +1,36 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <section class="border-b border-white/20 bg-accent-500 py-12">
+    <div class="mx-auto max-w-7xl border-x border-white/20 px-8 py-12 gradient-grid">
+      <div class="mx-auto text-white text-center">
+        <h1 class="text-4xl font-display uppercase">Road surface analysis using the Finite Element Method</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-black text-white py-12">
+    <div class="mx-auto max-w-7xl px-8">
+      <a href="/" class="bg-orange text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-black transition-colors duration-300">
+        Return to Main Page
+      </a>
+      <h2 class="text-2xl font-bold mt-8">Project summary</h2>
+      <p class="mt-8">
+        This project uses Finite Element Analysis (FEA) to simulate how asphalt road surfaces endure cyclic loading and environmental stressors, 
+        like temperature changes and moisture. Starting with a basic asphalt model, 
+        I iteratively refined the simulation by focusing on stress distribution under tire paths and integrating subgrade layers for realism. 
+        By referencing asphalt’s S-N curve and applying Miner’s Rule for cumulative fatigue, 
+        I estimated a realistic road lifespan of about 9-10 years under typical traffic and environmental conditions. 
+        This research highlights the value of FEA in predicting road durability and planning effective maintenance strategies. <br>
+        <br>
+
+        <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              style="height: 700px;" src="/src/images/fea.jpg" />
+        <p>Read the full documentation <a href="/src/images/FEA Project documentation.pdf" target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">here</a>.</p>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
