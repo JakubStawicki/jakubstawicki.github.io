@@ -1,4 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import mission1 from 'src/images/mission1.jpg';
+import mission2 from 'src/images/mission2.jpg';
+import mission3 from 'src/images/mission3.jpg';
+import mission4 from 'src/images/mission4.jpg';
+import mission5 from 'src/images/mission5.jpg';
+import mission6 from 'src/images/mission6.jpg';
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
@@ -58,38 +65,32 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
               <ul class="splide__list" id="splide01-list" role="presentation">
                 <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
                   aria-roledescription="slide" aria-label="2 of 10">
-                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-                    style="height: 700px;" src="/src/images/mission 1.jpg" />
+                  <Image src={mission1} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
                 </li>
       
                 <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
                   aria-roledescription="slide" aria-label="2 of 10">
-                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-                    style="height: 700px;" src="/src/images/mission 2.jpg" />
+                  <Image src={mission2} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
                 </li>
       
                 <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
                   aria-roledescription="slide" aria-label="2 of 10">
-                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-                    style="height: 700px;" src="/src/images/mission 3.jpg" />
+                  <Image src={mission3} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
                 </li>
 
                 <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
                   aria-roledescription="slide" aria-label="2 of 10">
-                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-                    style="height: 700px;" src="/src/images/mission 4.jpg" />
+                  <Image src={mission4} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />/>
                 </li>
 
                 <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
                   aria-roledescription="slide" aria-label="2 of 10">
-                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-                    style="height: 700px;" src="/src/images/mission 5.jpg" />
+                  <Image src={mission5} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
                 </li>
 
                 <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
                   aria-roledescription="slide" aria-label="2 of 10">
-                  <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-                    style="height: 700px;" src="/src/images/mission 6.jpg" />
+                  <Image src={mission6} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
                 </li>
                 <!-- Add more slides similarly -->
               </ul>

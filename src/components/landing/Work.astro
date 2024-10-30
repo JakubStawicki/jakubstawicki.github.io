@@ -1,3 +1,11 @@
+---
+import { Image } from 'astro:assets';
+import p1 from 'src/images/p1.png';
+import p2 from 'src/images/p2.png';
+import p3 from 'src/images/p3.jpg';
+import p4 from 'src/images/p4.png';
+---
+
 <section class="border-b border-white/20 bg-accent-500">
   <div class="mx-auto max-w-7xl border-x border-white/20 px-8 py-12 gradient-grid">
     <div class="mx-auto">
@@ -20,11 +28,7 @@
               <div class="text-white text-xs p-2 text-center">
                 <span class="block font-semibold">Hobbies</span>
               </div>
-              <img
-                alt="Hobbies"
-                class="w-full h-full object-cover object-center bg-white border-t border-black"
-                src="/src/images/1.png"
-              />
+              <Image src={p1} alt="Hobbies" class="w-full h-full object-cover object-center bg-white border-t border-black"  />
             </a>
           </li>
           <!-- Research -->
@@ -33,11 +37,7 @@
               <div class="text-white text-xs p-2 text-center">
                 <span class="block font-semibold">FEM Research project</span>
               </div>
-              <img
-                alt="Research"
-                class="w-full h-full object-cover object-center bg-white border-t border-black"
-                src="/src/images/2.png"
-              />
+              <Image src={p2} alt="Research" class="w-full h-full object-cover object-center bg-white border-t border-black"  />
             </a>
           </li>
           <!-- Cadets -->
@@ -46,11 +46,7 @@
               <div class="text-white text-xs p-2 text-center">
                 <span class="block font-semibold">Army Cadets</span>
               </div>
-              <img
-                alt="Cadets"
-                class="w-full h-full object-cover object-center bg-white border-t border-black"
-                src="/src/images/Cadets x.jpg"
-              />
+              <Image src={p3} alt="Cadets" class="w-full h-full object-cover object-center bg-white border-t border-black"  />
             </a>
           </li>
           <!-- Missions -->
@@ -59,11 +55,7 @@
               <div class="text-white text-xs p-2 text-center">
                 <span class="block font-semibold">Expedition</span>
               </div>
-              <img
-                alt="Expeditions"
-                class="w-full h-full object-cover object-center bg-white border-t border-black"
-                src="/src/images/5.png"
-              />
+              <Image src={p4} alt="Expeditions" class="w-full h-full object-cover object-center bg-white border-t border-black" />
             </a>
           </li>
         </ul>

@@ -1,5 +1,8 @@
 ---
 import { Image } from 'astro:assets';
+import Cadets1 from 'src/images/Cadets1.jpg';
+import Cadets2 from 'src/images/Cadets2.jpg';
+import Cadets3 from 'src/images/Cadets3.jpg';
 import Cadets4 from 'src/images/Cadets4.jpg';
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
@@ -65,25 +68,22 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       <div class="splide__track" id="splide01-track" style="padding-left: 0px; padding-right: 0px;">
         <ul class="splide__list" id="splide01-list" role="presentation">
           <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
-            aria-roledescription="slide" aria-label="2 of 10">
-            <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              style="height: 700px;" src="/src/images/Cadets1.jpg" />
+            aria-roledescription="slide" aria-label="1 of 10">
+           <Image src={Cadets1} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
           </li>
 
           <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
             aria-roledescription="slide" aria-label="2 of 10">
-            <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              style="height: 700px;" src="/src/images/Cadets2.jpg" />
+            <Image src={Cadets2} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
           </li>
 
           <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
-            aria-roledescription="slide" aria-label="2 of 10">
-            <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              style="height: 700px;" src="/src/images/Cadets3.jpg" />
+            aria-roledescription="slide" aria-label="3 of 10">
+            <Image src={Cadets3} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
           </li>
 
           <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
-            aria-roledescription="slide" aria-label="2 of 10">
+            aria-roledescription="slide" aria-label="4 of 10">
             <Image src={Cadets4} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
           </li>
         </ul>

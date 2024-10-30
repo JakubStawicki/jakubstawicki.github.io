@@ -1,4 +1,14 @@
 ---
+import { Image } from 'astro:assets';
+import bike1 from 'src/images/bike1.jpg';
+import bike2 from 'src/images/bike2.jpg';
+import ski1 from 'src/images/ski1.jpg';
+import ski2 from 'src/images/ski2.jpg';
+import ski3 from 'src/images/ski3.jpg';
+import fish1 from 'src/images/fish1.jpg';
+import fish2 from 'src/images/bike2.jpg';
+import kayak from 'src/images/bike2.jpg';
+
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
@@ -56,14 +66,12 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         <ul class="splide__list" id="splide01-list" role="presentation">
           <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
             aria-roledescription="slide" aria-label="2 of 10">
-            <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              style="height: 700px;" src="/src/images/bike 1.jpg" />
+            <Image src={bike1} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
           </li>
 
           <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
             aria-roledescription="slide" aria-label="2 of 10">
-            <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              style="height: 700px;" src="/src/images/bike 4.jpg" />
+            <Image src={bike2} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
           </li>
         </ul>
       </div>
@@ -110,21 +118,18 @@ x-data="{ init() {
 <div class="splide__track" id="splide01-track" style="padding-left: 0px; padding-right: 0px;">
   <ul class="splide__list" id="splide01-list" role="presentation">
     <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
-      aria-roledescription="slide" aria-label="2 of 10">
-      <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-        style="height: 700px;" src="/src/images/ski 1.jpg" />
+      aria-roledescription="slide" aria-label="1 of 10">
+      <Image src={ski1} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
     </li>
 
     <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
       aria-roledescription="slide" aria-label="2 of 10">
-      <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-        style="height: 700px;" src="/src/images/ski 2.jpg" />
+      <Image src={ski2} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
     </li>
 
     <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
-    aria-roledescription="slide" aria-label="2 of 10">
-    <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-      style="height: 700px;" src="/src/images/ski 3.jpg" />
+      aria-roledescription="slide" aria-label="3 of 10">
+    <Image src={ski3} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
   </li>
   </ul>
 </div>
@@ -171,19 +176,16 @@ x-data="{ init() {
   <ul class="splide__list" id="splide01-list" role="presentation">
     <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
       aria-roledescription="slide" aria-label="2 of 10">
-      <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-        style="height: 700px;" src="/src/images/fish 1.jpg" />
+      <Image src={fish1} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
     </li>
 
     <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
       aria-roledescription="slide" aria-label="2 of 10">
-      <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-        style="height: 700px;" src="/src/images/fish 2.jpg" />
+      <Image src={fish2} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
     </li>
     <li class="flex justify-center flex-col splide__slide" id="splide01-slide02" role="tabpanel"
       aria-roledescription="slide" aria-label="2 of 10">
-      <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-        style="height: 700px;" src="/src/images/kayak.jpg" />
+      <Image src={kayak} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
     </li>
   </ul>
 </div>

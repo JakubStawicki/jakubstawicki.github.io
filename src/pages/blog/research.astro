@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import fea from 'src/images/fea.jpg';
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
@@ -26,8 +28,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         This research highlights the value of FEA in predicting road durability and planning effective maintenance strategies. <br>
         <br>
 
-        <img alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              style="height: 700px;" src="/src/images/fea.jpg" />
+        <Image src={fea} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
         <p>Read the full documentation <a href="/src/images/FEA Project documentation.pdf" target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">here</a>.</p>
       </p>
     </div>
