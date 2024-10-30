@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import fea from 'src/assets/images/fea.jpg';
+import feapdf from 'src/assets/images/FEA Project documentation.pdf';
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
@@ -29,7 +30,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
         <br>
 
         <Image src={fea} alt="work" class="w-full object-cover object-center bg-white border-t border-black lg:border-r" style="height: 700px;"  />
-        <p>Read the full documentation <a href="/src/images/FEA Project documentation.pdf" target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">here</a>.</p>
+        <p>Read the full documentation <a href={feapdf} target="_blank" style="color: #007bff; font-weight: bold; text-decoration: underline;">here</a>.</p>
       </p>
     </div>
   </section>
